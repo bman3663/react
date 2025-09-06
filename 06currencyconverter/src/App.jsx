@@ -15,7 +15,6 @@ function App() {
 
   const currencyInfo = useCurrencyInfo(from)
   const options = Object.keys(currencyInfo)
-  // console.log("Options: " + options)
 
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to])
