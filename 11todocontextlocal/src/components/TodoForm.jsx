@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function TodoForm() {
   const { addTodo } = useTodo();
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState(""); // TODO TEXT
 
   const add = (e) => {
     e.preventDefault();
@@ -23,7 +23,6 @@ function TodoForm() {
           value={todo}
           onChange={(e) => setTodo(e.target.value)}
         />
-
         <button type="Submit">Add</button>
       </div>
     </form>

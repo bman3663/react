@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import { useTodo } from "../contexts";
-// edit
-// delete
-//  we want to map each todo obj to a li
-// we want the text area to be default immutabel
-// when we toggle "edit", text becomes mutable
-// when we hit "finish editing", it becomes immutable again
-// ^^ also, on finish, it updates the todo obj,
-// ^^ may need a useEffect to reload the page
-// delete: find obj in list and remove
+
 function TodoItem({ todo }) {
   const [isTodoEditable, setIsTodoEditable] = useState(false);
   const [todoMsg, setTodoMsg] = useState(todo.todo);
